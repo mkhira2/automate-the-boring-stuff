@@ -1,6 +1,6 @@
 # Automate the Boring Stuff
 
-These exercises accompany the book Automate the Boring Stuff (2015), written by Al Sweigart, and published by No Starch Press.
+These exercises accompany the book _Automate the Boring Stuff_ (2015) written by Al Sweigart and published by No Starch Press.
 
 ## Installation
 
