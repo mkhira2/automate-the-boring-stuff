@@ -25,5 +25,5 @@ print(vowelRegex.findall(robocopSentence))
 doubleVowelRegex = re.compile(r'[aeiouAEIOU]{2}')
 print(doubleVowelRegex.findall(robocopSentence))
 
-consonantsRegex = re.compile(r'[^aeiouAEIOU]')
+consonantsRegex = re.compile(r'[^aeiouAEIOU]') # ^ character returns opposite of provided argument
 print(consonantsRegex.findall(robocopSentence))
