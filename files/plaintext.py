@@ -1,4 +1,4 @@
-import os
+import os, shelve
 
 filePath = 'C:\\Users\\mkhir\\Desktop\\hello.txt'
 
@@ -27,3 +27,15 @@ baconFile = open('C:\\Users\\mkhir\\Desktop\\bacon.txt', 'a')
 baconFile.write('\n\nBacon is delicious.')
 baconFile.close()
 
+shelfFile = shelve.open('mydata')
+shelfFile['cats'] = ['Zophie', 'Pooka', 'Simon', 'Fat-tail', 'Cleo']
+shelfFile.close()
+
+shelfFile = shelve.open('mydata')
+print(shelfFile['cats'])
+shelfFile.close()
+
+shelfFile = shelve.open('mydata')
+print('keys are ', list(shelfFile.keys()))
+print('values are ', list(shelfFile.values()))
+shelfFile.close()
