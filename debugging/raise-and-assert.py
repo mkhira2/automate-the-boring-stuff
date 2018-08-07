@@ -1,6 +1,7 @@
 import traceback, datetime
 
 try:
+    # raised exceptions are for user errors and should raise exceptions
     raise Exception('This is the error message.')
 except: 
         errorFile = open('error_log.txt', 'a')
