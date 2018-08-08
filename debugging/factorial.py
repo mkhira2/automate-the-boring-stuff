@@ -4,7 +4,7 @@ logging.basicConfig(filename='myFactorialLog.txt', level=logging.DEBUG, format='
 
 # turn this on/off to enable/disable logging messages
 # DEBUG / INFO / WARNING / ERROR / CRITICAL
-logging.disable(logging.CRITICAL)
+# logging.disable(logging.CRITICAL)
 
 logging.debug('Start of program')
 
