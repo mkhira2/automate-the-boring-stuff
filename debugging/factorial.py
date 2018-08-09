@@ -2,7 +2,6 @@ import logging
 
 logging.basicConfig(filename='myFactorialLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# test line
 # turn this on/off to enable/disable logging messages
 # DEBUG / INFO / WARNING / ERROR / CRITICAL
 # logging.disable(logging.CRITICAL)
