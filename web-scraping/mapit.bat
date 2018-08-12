@@ -1,1 +1,2 @@
-@py.exe c:\Users\mkhir\Desktop\automate-the-boring-stuff\webscraping\mapit.py %*
+@echo off
+python c:\path\mapit.py %1 %2 %3 %4 %5 %6 %7 %8 %9

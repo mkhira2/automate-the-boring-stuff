@@ -1,11 +1,18 @@
-import webbrowser, sys, pyperclip
+import webbrowser, sys
 
-# check if command line arguments were passed
 if len(sys.argv) > 1:
-	# ['mapit.py', '870', 'Valencia', 'St.'] -> 870 Valencia St.
-	address = ' '.join(sys.argv[1:])
+    address = ' '.join(sys.argv[1:]).strip()
 else:
-	address = pyperclip.paste()
+    # get from clipboard
+    import pyperclip
+    address = pyperclip.getcb().strip()
 
-# https://www.google.com/maps/place/<ADDRESS>
-webbrowser.open('https://www.google.com/maps/place/' + address)
+googlemapsurl = 'http://maps.google.com/maps?q='
+if sys.version.startswith('2.'): # for Python 2 version
+    import urllib
+    googlemapsurl += urllib.quote(address)
+else:
+    import urllib.parse
+    googlemapsurl += urllib.parse.quote(address)
+
+webbrowser.open(googlemapsurl)
