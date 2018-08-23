@@ -1,6 +1,5 @@
 import PyPDF2, os
 
-# test
 # download example pdfs from:
 # http://autbor.com/meetingminutes1.pdf
 # http://autbor.com/meetingminutes2.pdf
