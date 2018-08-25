@@ -1,6 +1,6 @@
 import pyautogui
 
-# FAILSAFE: move mouse to upper-right corner of screen (0, 0)
+# FAILSAFE: move mouse to upper-left corner of screen (0, 0)
 
 print(pyautogui.size()) 
 width, height = pyautogui.size()
