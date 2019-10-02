@@ -1,9 +1,10 @@
-import traceback, datetime
+import traceback
+import datetime
 
 try:
     # raised exceptions are for user errors and should raise exceptions
     raise Exception('This is the error message.')
-except: 
+except Exception:
         errorFile = open('error_log.txt', 'a')
         errorFile.write('Exception occurred at: ' + str(datetime.datetime.now()) + '\n')
         errorFile.write(traceback.format_exc() + '\n')
@@ -13,14 +14,15 @@ except:
 """
 
 ************
-*          *     
+*          *
 *          *
 *          *
 ************
 
 """
 
-def boxPrint(symbol, width, height):
+
+def box_print(symbol, width, height):
     if len(symbol) != 1:
         raise Exception('"symbol" needs to be a string of length 1.')
     if (width < 2) or (height < 2):
@@ -33,5 +35,6 @@ def boxPrint(symbol, width, height):
 
     print(symbol * width)
 
-print(boxPrint('*', 15, 5))
-print(boxPrint('O', 5, 16))
+
+print(box_print('*', 15, 5))
+print(box_print('O', 5, 16))
